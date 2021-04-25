@@ -5,6 +5,7 @@ public class Vizitka {
     private String firma;
     private String ulice;
     private String obecPsc;
+    private String celaAdresa;
     private String email;
     private String telefon;
     private String web;
@@ -18,14 +19,10 @@ public class Vizitka {
         this.firma = firma;
         this.ulice = ulice;
         this.obecPsc = obecPsc;
+        this.celaAdresa = ulice + ", " + obecPsc;
         this.email = email;
         this.telefon = telefon;
         this.web = web;
-    }
-
-
-    public final String celaAdresa() {
-        return ulice + ", " + obecPsc;
     }
 
     public String getJmeno() {
@@ -60,6 +57,7 @@ public class Vizitka {
         this.obecPsc = obecPsc;
     }
 
+    public String getCelaAdresa() {return celaAdresa; }
 
     public String getEmail() {
         return email;
